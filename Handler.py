@@ -18,13 +18,14 @@ def create_troubleshoot():
     text = soup.prettify()
 
     # Creates a file which contains the prettified HTML
-    with open("raw.txt", "w", encoding="utf-8") as f:
+    with open("raw.html", "w", encoding="utf-8") as f:
         f.write(text)
 
-    with open("links.txt", "w", encoding="utf-8") as f:
+    with open("links.html", "w", encoding="utf-8") as f:
         for link in soup.find_all('a'):
             linkString = link.get('href')
             f.write(f"{linkString}\n")
+    print("Files created successfully")
 
 def parse_header():
     
@@ -65,24 +66,37 @@ def parse_header():
                 valid_filename = "".join(c for c in degree_name if c.isalnum() or c in (' ', '_')).rstrip()
 
                 # Create the full path for the file
-                file_path = os.path.join(folder_name, f"{valid_filename}.html")
+                file_path_html = os.path.join(folder_name, f"{valid_filename}.html")
 
                 # Write the prettified HTML content to a file in the "Fowler" folder
-                with open(file_path, "w", encoding="utf-8") as f:
+                with open(file_path_html, "w", encoding="utf-8") as f:
                     page_text = subsoup.prettify()
                     f.write(page_text)
 
-                print(f'Saved: {file_path}')
+                file_path_txt = os.path.join(folder_name, f"{valid_filename}.txt")
+
+                with open(file_path_txt, "w", encoding="utf-8") as f:
+                    f.write(parse_courses(subsoup))
+
+                print(f'Saved: {file_path_html}')
+                print(f'Saved: {file_path_txt}')
         else:
             print("No program list found.")
     else:
         print("No 'Degrees' header found.")
 
+# Returns courses offered per degree
+def parse_courses(soupObj):
+    return soupObj.get_text()
+    print()
+
 # Main method for convenience and usability
 def main():
     
-    run_create_troubleshoot = input("Would you like to create the necessary troubleshoot files? y or n: ")
-    run_parse_header = input("Would you like to create the main html parser? y or n: ")
+    run_create_troubleshoot = input("Would you like to create the necessary troubleshoot files? y or n: \n")
+    print()
+    run_parse_header = input("Would you like to create the main html parser? y or n: \n")
+    print()
 
     if run_create_troubleshoot == "y":
         create_troubleshoot()
