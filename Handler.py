@@ -27,7 +27,52 @@ def create_troubleshoot():
             f.write(f"{linkString}\n")
     print("Files created successfully")
 
-def parse_header():
+# Returns courses offered per degree
+def parse_courses(soupObj):
+    
+    final_text = ""
+
+    # searches for all 'div' with the class 'program_description'
+    catalog_group = soupObj.find("div", class_="custom_leftpad_20")
+
+    if catalog_group:
+
+        # Fetches all 'h2' tags within 'div'
+        group_name_tags = catalog_group.find_all("h2")
+        
+        for name in group_name_tags:
+            
+            # Returns name of course category and adds it to final_text
+            group_name = name.text.strip()
+            final_text += f"\n{group_name}\n\n"
+
+            course_element = name.find_next_sibling("ul")
+            
+            
+            if course_element:
+
+                # course_element_text = course_element.prettify()
+                # final_text += f"{course_element_text}"
+
+                contained_courses = course_element.find_all("li")
+
+                for course in contained_courses:
+
+                    for course_name in course.find_all("a"):
+                        
+                        if course_name.text.strip() != "":
+
+                            final_text += f"\t--{course.text.strip()}\n\n"
+
+
+            else:
+                print("No course element found")
+    else:
+        print("no catalog group found")
+    
+    return final_text
+
+def parse_college():
     
     # Create the "Fowler" folder if it doesn't exist
     folder_name = 'Fowler'
@@ -36,6 +81,8 @@ def parse_header():
 
     # Verify that the HTML file contains a header with the text 'Degrees'
     degree_header = soup.find("h4", text="Degrees")
+
+
 
     if degree_header:
 
@@ -60,7 +107,7 @@ def parse_header():
                 degree_response = requests.get(complete_url)
 
                 # creates another soup object which continuously reads each new webpage
-                subsoup = BeautifulSoup(degree_response.content, "html.parser")
+                coursesoup = BeautifulSoup(degree_response.content, "html.parser")
 
                 # Clean the degree name to make it a valid filename
                 valid_filename = "".join(c for c in degree_name if c.isalnum() or c in (' ', '_')).rstrip()
@@ -70,25 +117,20 @@ def parse_header():
 
                 # Write the prettified HTML content to a file in the "Fowler" folder
                 with open(file_path_html, "w", encoding="utf-8") as f:
-                    page_text = subsoup.prettify()
+                    page_text = coursesoup.prettify()
                     f.write(page_text)
+                print(f'Saved: {file_path_html}')
 
                 file_path_txt = os.path.join(folder_name, f"{valid_filename}.txt")
 
                 with open(file_path_txt, "w", encoding="utf-8") as f:
-                    f.write(parse_courses(subsoup))
-
-                print(f'Saved: {file_path_html}')
+                    f.write(parse_courses(coursesoup))
                 print(f'Saved: {file_path_txt}')
         else:
             print("No program list found.")
     else:
         print("No 'Degrees' header found.")
 
-# Returns courses offered per degree
-def parse_courses(soupObj):
-    return soupObj.get_text()
-    print()
 
 # Main method for convenience and usability
 def main():
@@ -102,6 +144,6 @@ def main():
         create_troubleshoot()
     
     if run_parse_header == "y":
-        parse_header()
+        parse_college()
 
 main()
