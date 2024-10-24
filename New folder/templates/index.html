@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantherPal</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="student-info">
+            <div class="info-row">
+                <div class="info-item"><strong>Name:</strong> _____</div>
+                <div class="info-item"><strong>Major:</strong> _____</div>
+                <div class="info-item"><strong>Minor:</strong> _____</div>
+                <div class="info-item"><strong>Year:</strong> _____</div>
+            </div>
+        </header>
+
+
+        
+        <div class="progress-wrapper">
+            <!-- Year labels -->
+            <div class="year-label freshman">Freshman</div>
+            <div class="year-label sophomore">Sophomore</div>
+            <div class="year-label junior">Junior</div>
+            <div class="year-label senior">Senior</div>
+        
+            <!-- Progress Circle -->
+            <div class="progress-container">
+                <svg class="progress-circle" width="200" height="200" viewBox="0 0 100 100" onclick="goToCourses()">
+                    
+                    <circle cx="50" cy="50" r="45" stroke="#ddd" stroke-width="10" fill="none" />
+                
+                    <circle class="progress-bar" cx="50" cy="50" r="45" stroke="#f0baba" stroke-width="10" fill="none"
+                            stroke-dasharray="283" stroke-dashoffset="283" transform="rotate(-90 50 50)" />
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="18" font-weight="bold" fill="#333" id="progress-text">0%</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProgress(percentage) {
+            const progressCircle = document.querySelector('.progress-bar');
+            const textElement = document.getElementById('progress-text');
+            
+            const radius = 45;
+            const circumference = 2 * Math.PI * radius;
+            
+            
+            progressCircle.style.strokeDasharray = `${circumference}`;
+            progressCircle.style.strokeDashoffset = `${(percentage / 100) * circumference + circumference}`;  // Reversed fill
+    
+            
+            textElement.textContent = `${Math.round(percentage)}%`;
+        }
+    
+        const percentageComplete = 75;  
+        updateProgress(percentageComplete);
+    
+        function goToCourses() {
+            window.location.href = "/courses";
+        }
+    </script>
+</body>
+</html>
