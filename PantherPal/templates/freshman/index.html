@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Planner - Coursicle Style</title>
+  <link rel="stylesheet" href="/static/css/freshman/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Freshman Course Planner</h1>
+    </header>
+
+    <div class="course-search">
+      <input type="text" id="course-search" placeholder="Search for courses..." oninput="searchCourses()">
+      <div id="course-list"></div>
+    </div>
+
+    <div class="schedule">
+      <h2>Your Schedule</h2>
+      <div id="schedule-calendar" class="calendar">
+        <!-- Day columns for each day -->
+        <div class="day" id="monday">
+          <div class="day-header">Monday</div>
+          <div class="time-slot" data-time="9:00 AM"></div>
+          <div class="time-slot" data-time="10:00 AM"></div>
+          <div class="time-slot" data-time="11:00 AM"></div>
+          <div class="time-slot" data-time="12:00 PM"></div>
+          <div class="time-slot" data-time="1:00 PM"></div>
+          <div class="time-slot" data-time="2:00 PM"></div>
+          <div class="time-slot" data-time="3:00 PM"></div>
+          <div class="time-slot" data-time="4:00 PM"></div>
+          <div class="time-slot" data-time="5:00 PM"></div>
+        </div>
+        <!-- Repeat for other days (Tuesday to Friday) -->
+        <div class="day" id="tuesday">
+            <div class="day-header">Tuesday</div>
+            <div class="time-slot" data-time="9:00 AM"></div>
+            <div class="time-slot" data-time="10:00 AM"></div>
+            <div class="time-slot" data-time="11:00 AM"></div>
+            <div class="time-slot" data-time="12:00 PM"></div>
+            <div class="time-slot" data-time="1:00 PM"></div>
+            <div class="time-slot" data-time="2:00 PM"></div>
+            <div class="time-slot" data-time="3:00 PM"></div>
+            <div class="time-slot" data-time="4:00 PM"></div>
+            <div class="time-slot" data-time="5:00 PM"></div>
+          </div>
+          
+        <div class="day" id="wednesday">
+            <div class="day-header">Wednesday</div>
+            <div class="time-slot" data-time="9:00 AM"></div>
+            <div class="time-slot" data-time="10:00 AM"></div>
+            <div class="time-slot" data-time="11:00 AM"></div>
+            <div class="time-slot" data-time="12:00 PM"></div>
+            <div class="time-slot" data-time="1:00 PM"></div>
+            <div class="time-slot" data-time="2:00 PM"></div>
+            <div class="time-slot" data-time="3:00 PM"></div>
+            <div class="time-slot" data-time="4:00 PM"></div>
+            <div class="time-slot" data-time="5:00 PM"></div>
+        </div>
+          
+        <div class="day" id="thursday">
+            <div class="day-header">Thursday</div>
+            <div class="time-slot" data-time="9:00 AM"></div>
+            <div class="time-slot" data-time="10:00 AM"></div>
+            <div class="time-slot" data-time="11:00 AM"></div>
+            <div class="time-slot" data-time="12:00 PM"></div>
+            <div class="time-slot" data-time="1:00 PM"></div>
+            <div class="time-slot" data-time="2:00 PM"></div>
+            <div class="time-slot" data-time="3:00 PM"></div>
+            <div class="time-slot" data-time="4:00 PM"></div>
+            <div class="time-slot" data-time="5:00 PM"></div>
+        </div>
+          
+        <div class="day" id="friday">
+            <div class="day-header">Friday</div>
+            <div class="time-slot" data-time="9:00 AM"></div>
+            <div class="time-slot" data-time="10:00 AM"></div>
+            <div class="time-slot" data-time="11:00 AM"></div>
+            <div class="time-slot" data-time="12:00 PM"></div>
+            <div class="time-slot" data-time="1:00 PM"></div>
+            <div class="time-slot" data-time="2:00 PM"></div>
+            <div class="time-slot" data-time="3:00 PM"></div>
+            <div class="time-slot" data-time="4:00 PM"></div>
+            <div class="time-slot" data-time="5:00 PM"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='freshman/script.js') }}"></script>
+</body>
+</html>

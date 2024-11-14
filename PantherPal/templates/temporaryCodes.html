@@ -1,0 +1,32 @@
+<header class="student-info">
+    <div class="info-row">
+        <div class="info-item"><strong>Name:</strong> _____</div>
+        <div class="info-item"><strong>Major:</strong> _____</div>
+        <div class="info-item"><strong>Minor:</strong> _____</div>
+        <div class="info-item"><strong>Year:</strong> _____</div>
+    </div>
+</header>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Courses for Year {{ year }}, Semester {{ semester }}</h1>
+        <ul>
+            {% for course in courses %}
+                <li>
+                    {{ course.name }} - {% if course.completed %}Completed{% else %}In Progress{% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
