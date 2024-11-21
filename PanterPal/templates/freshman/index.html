@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshman Course Planner</title>
+    <link rel="stylesheet" href="/static/css/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>  <!-- Drag and Drop Library -->
+    <style>
+        /* Style the schedule to display horizontally */
+        .schedule {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .schedule-day {
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .schedule-day h2 {
+            text-align: center;
+        }
+
+        .schedule-box {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Style search results to be draggable boxes */
+        .course {
+            margin: 5px;
+            padding: 10px;
+            background-color: #f0baba;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .course:hover {
+            background-color: #f77f7f;
+        }
+
+        /* Add some spacing for the search results */
+        #search-results {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .more-results {
+            margin-top: 10px;
+            color: gray;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Freshman Course Planner</h1>
+            <div>
+                <input type="text" id="course-search" placeholder="Search for courses..." onkeyup="searchCourses()">
+            </div>
+        </header>
+
+        <!-- Course search results -->
+        <div id="search-results">
+            <!-- Dynamically populated search results here -->
+        </div>
+
+        <!-- Weekly schedule -->
+        <div class="schedule">
+            <div class="schedule-day" id="monday">
+                <h2>Monday</h2>
+                <div class="schedule-box" id="monday-box"></div>
+                <div class="schedule-box" id="monday-box-2"></div>
+                <div class="schedule-box" id="monday-box-3"></div>
+                <div class="schedule-box" id="monday-box-4"></div>
+                <div class="schedule-box" id="monday-box-5"></div>
+                <div class="schedule-box" id="monday-box-6"></div>
+            </div>
+            <div class="schedule-day" id="tuesday">
+                <h2>Tuesday</h2>
+                <div class="schedule-box" id="tuesday-box"></div>
+                <div class="schedule-box" id="tuesday-box-2"></div>
+                <div class="schedule-box" id="tuesday-box-3"></div>
+                <div class="schedule-box" id="tuesday-box-4"></div>
+                <div class="schedule-box" id="tuesday-box-5"></div>
+                <div class="schedule-box" id="tuesday-box-6"></div>
+            </div>
+            <div class="schedule-day" id="wednesday">
+                <h2>Wednesday</h2>
+                <div class="schedule-box" id="wednesday-box"></div>
+                <div class="schedule-box" id="wednesday-box-2"></div>
+                <div class="schedule-box" id="wednesday-box-3"></div>
+                <div class="schedule-box" id="wednesday-box-4"></div>
+                <div class="schedule-box" id="wednesday-box-5"></div>
+                <div class="schedule-box" id="wednesday-box-6"></div>
+            </div>
+            <div class="schedule-day" id="thursday">
+                <h2>Thursday</h2>
+                <div class="schedule-box" id="thursday-box"></div>
+                <div class="schedule-box" id="thursday-box-2"></div>
+                <div class="schedule-box" id="thursday-box-3"></div>
+                <div class="schedule-box" id="thursday-box-4"></div>
+                <div class="schedule-box" id="thursday-box-5"></div>
+                <div class="schedule-box" id="thursday-box-6"></div>
+            </div>
+            <div class="schedule-day" id="friday">
+                <h2>Friday</h2>
+                <div class="schedule-box" id="friday-box"></div>
+                <div class="schedule-box" id="friday-box-2"></div>
+                <div class="schedule-box" id="friday-box-3"></div>
+                <div class="schedule-box" id="friday-box-4"></div>
+                <div class="schedule-box" id="friday-box-5"></div>
+                <div class="schedule-box" id="friday-box-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let courses = []; // Placeholder for course data (from backend)
+
+        // Function to search for courses
+        function searchCourses() {
+            const searchTerm = document.getElementById('course-search').value.toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+            
+            // Clear previous results
+            resultsContainer.innerHTML = '';
+
+            // Filter the courses based on the search term
+            const filteredCourses = courses.filter(course => 
+                course.name.toLowerCase().includes(searchTerm)
+            );
+
+            // Show only the first 5 results
+            const limitedCourses = filteredCourses.slice(0, 5);
+
+            // Display filtered courses
+            limitedCourses.forEach(course => {
+                const courseDiv = document.createElement('div');
+                courseDiv.classList.add('course');
+                courseDiv.setAttribute('draggable', 'true');
+                courseDiv.setAttribute('data-course-id', course.id);
+                courseDiv.textContent = `${course.class_code} - ${course.name}`;
+                courseDiv.ondragstart = (e) => dragStart(e);
+                resultsContainer.appendChild(courseDiv);
+            });
+
+            // If there are more than 5 results, show a message
+            if (filteredCourses.length > 5) {
+                const moreResultsMessage = document.createElement('div');
+                moreResultsMessage.classList.add('more-results');
+                moreResultsMessage.textContent = 'Showing the first 5 results. Please refine your search.';
+                resultsContainer.appendChild(moreResultsMessage);
+            }
+        }
+
+        // Drag start function
+        function dragStart(event) {
+            event.dataTransfer.setData('text', event.target.getAttribute('data-course-id'));
+        }
+
+        // Allow drop in schedule boxes
+        document.querySelectorAll('.schedule-box').forEach(box => {
+            box.ondragover = (e) => e.preventDefault();
+            box.ondrop = (e) => drop(e);
+        });
+
+        // Drop function to place courses into schedule boxes
+        function drop(event) {
+            event.preventDefault();
+            const courseId = event.dataTransfer.getData('text');
+            const course = courses.find(c => c.id == courseId);
+            const targetBox = event.target;
+
+            const courseDiv = document.createElement('div');
+            courseDiv.classList.add('course');
+            courseDiv.textContent = `${course.class_code} - ${course.name}`;
+            targetBox.appendChild(courseDiv);
+        }
+
+        // Fetch courses from the backend (example)
+        fetch('/get_courses')
+            .then(response => response.json())
+            .then(data => {
+                courses = data; // Store courses in the global variable
+            });
+    </script>
+</body>
+</html>

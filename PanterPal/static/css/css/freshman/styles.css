@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #be2323;
+    color: white;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .course-search {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  #course-search {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #course-list {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .schedule {
+    margin-top: 30px;
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 days */
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .day {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .day-header {
+    text-align: center;
+    background-color: #ffa3a3;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .time-slot {
+    border: 1px solid #ccc;
+    height: 60px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+  
+  .time-slot:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .course-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .course-item:hover {
+    background-color: #45a049;
+  }
+
