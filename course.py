@@ -1,16 +1,12 @@
 # course.py
 
 class Course:
-    def __init__(self, name: str, credits: int, prerequisites):
+    def __init__(self, name: str, credits: int, prerequisites, category: str):
         """Initializes the Course object with a name, credits, and an empty list of courses that require it as a prerequisite."""
         self.name = name
         self.credits = credits
         self.prerequisites = prerequisites
-
-    # def add_prerequisites(self, course_name: str):
-    #     """Adds a course to the prerequisites list if it's not already present."""
-    #     if course_name not in self.prerequisites:
-    #         self.prerequisites.append(course_name)
+        self.category = category
 
     def __str__(self):
         """Returns a string representation of the Course object for easy printing."""
