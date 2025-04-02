@@ -1,3 +1,4 @@
+
 import os
 import requests
 import re
@@ -10,17 +11,10 @@ from course import Course
 from queue import Queue
 import time
 
-# URL of the Chapman course catalog
-URL = "https://catalog.chapman.edu/content.php?catoid=46&navoid=2420"
-parentPage = requests.get(URL)  # Sends a request to fetch the webpage content
-
-# Creates a BeautifulSoup object to parse the HTML content
-soup = BeautifulSoup(parentPage.content, "html.parser")
-
 # Thread lock for thread-safe file writing
 file_lock = threading.Lock()
 
-def get_prerequisites(catoid, coid, retries=3):
+def get_prerequisites(catoid, coid, retries=10):
     """Fetches prerequisites using an AJAX request with retries."""
     ajax_url = f"https://catalog.chapman.edu/ajax/preview_course.php?catoid={catoid}&coid={coid}&show"
     for attempt in range(retries):
@@ -36,7 +30,7 @@ def get_prerequisites(catoid, coid, retries=3):
         except Exception as e:
             if attempt == retries - 1:  # If this is the last attempt, raise the exception
                 raise e
-            print(f"Attempt {attempt + 1} failed. Retrying...")
+            # print(f"Attempt {attempt + 1} failed. Retrying...")
 
 def prerequisite_allocator(text: str):
     if text:    
@@ -102,7 +96,12 @@ def parse_courses(soupObj):
         course_categories = catalog_group.find_all("div", class_="acalog-core")
         if course_categories:
             for categories in course_categories:
-                category = categories.find("h2").text.strip().split('(')[0].strip()
+                try:
+                    category = categories.find("h2").text.strip().split('(')[0].strip()
+                except:
+                    category = categories.find("h3").text.strip().split('(')[0].strip()
+                else:
+                    True
                 course_elements = categories.find_all("li", class_="acalog-course")
                 
                 # Use a thread-safe queue to collect results
@@ -159,8 +158,10 @@ def process_degree(degree, folder_name):
                 
         print(f'Saved: {file_path_csv}')
 
-def parse_college():
-    """Extracts degree program links and processes each degree to fetch its courses."""
+def parse_college(source_page):
+    
+    # Extracts degree program links and processes each degree to fetch its courses.
+    
     folder_name = 'Output'  # Folder to store the parsed course data
     cwd = os.getcwd()
     final_dr = os.path.join(cwd, folder_name)
@@ -168,7 +169,7 @@ def parse_college():
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     
-    degree_header = soup.find("h4", string="Degrees")  # Locate the 'Degrees' section
+    degree_header = source_page.find("h2")  # Locate the 'Degrees' section
     if degree_header:
         # Finds all siblings below the degree text on the page which contain a 'program list'
         program_list = degree_header.find_next_siblings("ul", class_="program-list")
@@ -206,7 +207,45 @@ def parse_college():
     else:
         print("No 'Degrees' header found.")
 
+# function which verifies that a given tag is both an <h2> header, and contains either 'college' or 'school' in its text
+
+def is_header_contains_college(tag):
+    return tag.name == 'h2' and ('college' in tag.string.lower() or 'school' in tag.string.lower())
+
+def parse_catalog(catalog_url = 'https://catalog.chapman.edu/content.php?catoid=46&navoid=2411'):
+    
+    catalog_page = requests.get(catalog_url)  # Sends a request to fetch the webpage content
+
+    soup =  BeautifulSoup(catalog_page.content, "html.parser")
+
+    sections = []
+    current_header = None
+    current_content = []
+    
+    for tag in soup.find_all(True):  # Find all tags
+        if is_header_contains_college(tag):
+            if current_header is not None:
+                # Create HTML block for previous section
+                section_html = f"{str(current_header)}{''.join(str(t) for t in current_content)}"
+                sections.append(BeautifulSoup(section_html, 'html.parser'))
+            current_header = tag
+            current_content = []
+        else:
+            if current_header is not None:  # Only collect after first h2
+                current_content.append(tag)
+    
+    # Add the last section
+    if current_header is not None:
+        section_html = f"{str(current_header)}{''.join(str(t) for t in current_content)}"
+        sections.append(BeautifulSoup(section_html, 'html.parser'))
+    
+    with ThreadPoolExecutor(max_workers = 5) as executor:
+        futures = [executor.submit(parse_college, section) for section in sections]
+
+        for future in futures:
+            future.result()
+
 def main(): 
-        cProfile.run('parse_college()')
+        parse_catalog()
 
 main()
