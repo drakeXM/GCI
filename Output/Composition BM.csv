@@ -1,0 +1,44 @@
+Course Name,Credits,Prerequisites,Category
+MUS 104 - Piano,1-4,N/A,general requirements
+MUS 133 - Theory I,2,consent of instructor,general requirements
+MUS 102B - Compendium of Western Music History II,3,"music major, minor and pass MUS 133  with a “C”, better, pass MUS 102A  with a C, better, consent of instructor",general requirements
+MUS 102A - Compendium of Western Music History I,3,"music major, minor and pass MUS 133  with a “C”, better, consent of instructor",general requirements
+MUS 404 - Advanced Piano,1-4,junior standing,general requirements
+MUS 233 - Theory III,2,"pass MUS 134  with a “C”, better, for B",general requirements
+MUS 244 - Principles of Music Technology,2,"pass MUS 128  with at least a C, pass MUS 133  with at least a C, consent of instructor",general requirements
+MUS 277 - Music Composition,2,B,general requirements
+MUS 234 - Theory IV,2,"pass MUS 102, MUS 233  with a “C”, better, pass music theory placement examination",general requirements
+MUS 280 - Music Information Literacy,0,music majors only,general requirements
+MUS 322G - New Music Ensemble,½,consent of instructor,general requirements
+MUS 330 - Form and Harmonic Analysis,2,"junior standing, pass MUS 234, MUS 236 with a “C”, better, for composition majors pass MUS 234, MUS 236 with “B”, better",general requirements
+MUS 340 - Instrumentation and Beginning Orchestration,2,"pass MUS 234  with a “C”, better, junior standing",general requirements
+MUS 377 - Advanced Topics in Music Composition,2,"MUS 277  (8 units), consent of instructor",general requirements
+MUS 405 - Music History and Literature V,3,"pass MUS 102B  and MUS 234  with a “C”, better, consent of instructor",general requirements
+MUS 497 - Applied Private Instruction in Composition,1-3,consent of instructor,general requirements
+MUS 322B - Small Ensemble: Strings,0.5,consent of instructor,one credit of small ensemble
+MUS 322A - Small Ensemble: Guitar,0.5,consent of instructor,one credit of small ensemble
+MUS 301 - Music History and Literature I,3,"pass MUS 102, MUS 102B  with a “C”, better",one of the following
+MUS 345 - Musical Theatre History and Cultural Practice,3,N/A,one of the following
+MUS 303 - Music History and Literature III,3,"pass MUS 102, MUS 102B  with a “C”, better, and MUS 233  with a “C”, better",one of the following
+MUS 304 - Music History and Literature IV,3,"pass MUS 102, MUS 102B  with a “C”, better, and MUS 234  with a “C”, better",one of the following
+MUS 302 - Music History and Literature II,3,"pass MUS 102, MUS 102B  with a “C”, better, and MUS 134  with a “C”, better",one of the following
+MUS 461 - Psychology of Music,3,N/A,one of the following
+MUS 439 - Topics in Film Music,3,"MUS 134, MUS 239, consent of instructor",one of the following
+MUS 496E - Opera History and Cultural Practice,3,"pass MUS 102B  and MUS 134  with at least a C, consent of instructor",one of the following
+MUS 496C - Seminar: Topics in Music History and Literature,3,"pass MUS 102B  with a “C”, better, consent of instructor",one of the following
+MUS 332A - Musical Cultures of Africa/Middle East,3,"pass MUS 102B  with a “C”, better, and music major, minor",one of the following
+MUS 332D - Folk and Traditional Musical Cultures of Europe,3,"pass MUS 102B  with a “C”, better, and music major, minor, instructor consent",one of the following
+MUS 332C - Musical Cultures of the Americas,3,"pass MUS 102B  with a “C”, better, and music major, minor",one of the following
+MUS 496D - Seminar: Topics in World Music and Culture,3,"consent of instructor and pass MUS 102B  with a “C”, better",one of the following
+MUS 332B - Musical Cultures of Asia/Pacific,3,"pass MUS 102B  with a “C”, better, and music major, minor",one of the following
+MUS 493G - Directed Research: Electroacoustic Music II,1-3,consent of instructor,two of following
+MUS 360 - Electroacoustic Music II,2,"MUS 260, MUS 344, consent of instructor",two of following
+MUS 260 - Electroacoustic Music I,2,"MUS 233, consent of instructor",two of following
+MUS 454 - Principles of Conducting,2,"pass MUS 234, MUS 236  with a “C”, better, consent of instructor",two of following
+MUS 493F - Directed Research: Electroacoustic Music I,1-3,consent of instructor,two of following
+MUS 324 - Audio Recording Techniques,3,"pass MUS 244  with a “C”, better and pass MUS 128, MUS 133  with a C, better",two of following
+MUS 346 - Music and Interactive Technology with MAX/MSP,3,"pass MUS 244  with a “C”, better, consent of instructor",two of following
+MUS 347 - Post-production Editing and Processing Techniques,3,"MUS 244, pass a diagnostic examination in computer literacy and basic audio recording skills",two of following
+MUS 348 - Introduction to Music Synthesis,3,"MUS 244, consent of instructor",two of following
+MUS 493C - Directed Research in Music Technology,1-3,consent of instructor,two of following
+MUS 450 - Choral Conducting I,2,"pass MUS 234, MUS 236  with a “C”, better, consent of instructor",two of following

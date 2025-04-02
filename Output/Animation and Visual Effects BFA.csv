@@ -1,0 +1,57 @@
+Course Name,Credits,Prerequisites,Category
+"FTV 140 - Introduction to Film and Media Aesthetics, Lecture and Laboratory",3,N/A,core requirements
+AVE 120 - Introduction to Animation and Visual Effects,3,"animation and visual effects, film production, film and television production major, game development programming, production design for film, visual effects minor, animation and visual effects themed inquiry",core requirements
+AVE 109 - Fundamental Graphics I for Animation and Visual Effects,3,animation and visual effects major,core requirements
+"FTV 130 - Introduction to Visual Storytelling, Lecture and Laboratory",3,"DCFMA major, advertising, documentary film, production design for film, television minor",core requirements
+SW 127 - Writing for Film and TV I,3,N/A,core requirements
+AVE 209 - Fundamental Graphics II for Animation and Visual Effects,3,"AVE 109, animation and visual effects major",core requirements
+AVE 310 - Animation and Visual Effects: Evenings with the Experts,3,N/A,core requirements
+AVE 323 - Color and Design: Principles and Practice,3,"AVE 209, animation and visual effects major",core requirements
+AVE 206 - Mechanics of Motion,3,major in animation & visual effects,core requirements
+AVE 247 - History and Aesthetics of Animation and Visual Effects,3,"Dodge College major, game development programming minor, visual effects minor, animation and visual effects themed inquiry",core requirements
+AVE 496 - Senior Thesis I: Concept Development,3,"AVE 249  with a B-, better, animation and visual effects major",core requirements
+AVE 498 - Senior Thesis III: Production II and Post-Production,3,"AVE 497, animation and visual effects major",core requirements
+AVE 497 - Senior Thesis II: Pre-Production and Production I,3,"AVE 202A  OR AVE 202B, and AVE 496, animation and visual effects major",core requirements
+AVE 249 - Storytelling in Animation and Visual Effects,3,"AVE 247  and animation and visual effects major, animation and visual effects themed inquiry",animation area of study - 2D
+AVE 256A - Beginning Character Animation for 2D,3,"AVE 206  and animation and visual effects major, animation and visual effects themed inquiry",animation area of study - 2D
+AVE 202A - 2D Computer Graphics I,3,AVE 206 ,animation area of study - 2D
+AVE 302A - 2D Computer Graphics II,3,N/A,animation area of study - 2D
+AVE 309 - Figure Drawing for Animators,3,AVE 209 ,animation area of study - 2D
+AVE 354 - Storyboarding and Story Reels,3,"AVE 249  with a B-, better, animation and visual effects major",animation area of study - 2D
+AVE 355 - Production Design for Animation and Visual Effects,3,"AVE 249  with a B-, better, AVE 323, animation and visual effects major",animation area of study - 2D
+AVE 356A - Intermediate Character Animation for 2D,3,"AVE 249  with a B-, better and AVE 256A, AVE 256B  and animation and visual effects major",animation area of study - 2D
+AVE 385 - Character Design,3,"AVE 209, animation and visual effects major",animation area of study - 2D
+AVE 357 - Writing for Animation,3,"SW 127, SW 128, TWP 127, TWP 128, AVE 249  and animation and visual effects, screenwriting, writing for film and television, television writing and prodution major",animation area of study - 2D
+AVE 454 - Advanced Storyboards and Character Layout,3,AVE 354 ,animation area of study - 2D
+AVE 249 - Storytelling in Animation and Visual Effects,3,"AVE 247  and animation and visual effects major, animation and visual effects themed inquiry",animation area of study - CG
+AVE 302B - 3D Computer Graphics II,3,"AVE 202B  with B-, better, AVE 249  with B-, better and animation and visual effects major, animation and visual effects, digital arts cluster",animation area of study - CG
+AVE 354 - Storyboarding and Story Reels,3,"AVE 249  with a B-, better, animation and visual effects major",animation area of study - CG
+AVE 256B - Beginning Character Animation for CG,3,"AVE 206  and animation and visual effects major, animation and visual effects themed inquiry",animation area of study - CG
+AVE 202B - 3D Computer Graphics I,3,"AVE 120  and animation and visual effects major, visual effects minor, game design minor, digital arts cluster",animation area of study - CG
+AVE 355 - Production Design for Animation and Visual Effects,3,"AVE 249  with a B-, better, AVE 323, animation and visual effects major",animation area of study - CG
+AVE 357 - Writing for Animation,3,"SW 127, SW 128, TWP 127, TWP 128, AVE 249  and animation and visual effects, screenwriting, writing for film and television, television writing and prodution major",animation area of study - CG
+AVE 356B - Intermediate Character Animation for CG,3,"AVE 249  with a B-, better and AVE 256A, AVE 256B  and animation and visual effects major, animation and visual effects themed inquiry",animation area of study - CG
+AVE 385 - Character Design,3,"AVE 209, animation and visual effects major",animation area of study - CG
+AVE 392 - Advanced Pre-visualization for Motion Pictures,3,"AVE 202B  with a B-, better",animation area of study - CG
+AVE 456B - Advanced Character Animation for CG,3,"AVE 356A, AVE 356B, animation and visual effects major",animation area of study - CG
+AVE 242 - Compositing for Visual Effects,3,"AVE 120, animation and visual effects major, game development programming minor, VFX minor",visual effects area of study
+AVE 342 - Virtual Production Workshop for Animation and Visual Effects,3,AVE 372 ,visual effects area of study
+AVE 256B - Beginning Character Animation for CG,3,"AVE 206  and animation and visual effects major, animation and visual effects themed inquiry",visual effects area of study
+AVE 369 - Visual Effects: Fundamental Techniques and Technologies,3,"AVE 120, AVE 202B  and Dodge College major, minor, animation and visual effects themed inquiry",visual effects area of study
+AVE 202B - 3D Computer Graphics I,3,"AVE 120  and animation and visual effects major, visual effects minor, game design minor, digital arts cluster",visual effects area of study
+AVE 372 - Unreal Engine for Filmmakers,3,N/A,visual effects area of study
+AVE 379 - Advanced Visual Effects Production and Workflow,3,AVE 369 ,visual effects area of study
+AVE 382 - Advanced Unreal Engine,3,AVE 372 ,visual effects area of study
+AVE 392 - Advanced Pre-visualization for Motion Pictures,3,"AVE 202B  with a B-, better",visual effects area of study
+AVE 402 - Advanced 3D Computer Graphics for Visual Effects,3,"AVE 202B, animation and visual effects major",visual effects area of study
+AVE 469 - On-Set and Post-Production Visual Effects Supervision,3,"AVE 379, animation and visual effects major, visual effects minor",visual effects area of study
+CPSC 230 - Computer Science I,3,MATH 100 ,recommended additional courses
+SW 155 - Short-Form Film and TV Analysis,3,"Screenwriting, Writing for Film and Television major",recommended additional courses
+FP 237 - Cinematography I,3,"FTV 130  and animation and visual effects, film and television production, film production, television writing and production major, production design for film minor",recommended additional courses
+FP 293 - Production Design I,3,FTV 130 ,recommended additional courses
+FP 133 - Audio Techniques,3,FTV 130  and DCFMA major,recommended additional courses
+FP 333 - Audio Design,3,FP 133 ,recommended additional courses
+AVE 329 - Experimental Course,1-3,N/A,recommended additional courses
+HON 373 - Pinocchio & Co: The Puppet Across Media,3,acceptance to the University Honors Program,recommended additional courses
+FP 481 - Set Decoration,3,N/A,recommended additional courses
+FP 486 - Costume Design,3,N/A,recommended additional courses

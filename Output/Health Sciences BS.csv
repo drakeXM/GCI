@@ -1,0 +1,46 @@
+Course Name,Credits,Prerequisites,Category
+BIOL 204 - From Molecules to Cells: Evolution of Life on Earth (Gen Biol I),3,N/A,requirements
+"HSCI 210 - Human Anatomy, Lecture and Laboratory",4,N/A,requirements
+CHEM 150 - General Chemistry II,3,"CHEM 140, CHEM 140L ",requirements
+CHEM 140 - General Chemistry I,3,N/A,requirements
+HSCI 365 - Human Physiology Part A,3,"BIOL 204, CHEM 140, CHEM 140L, and BIOL 210, HSCI 210 ",requirements
+HSCI 498 - Health Sciences Capstone,3,instructor consent required,requirements
+"HSCI 366 - Human Physiology Part B, Lecture and Laboratory",4,"BIOL 204, CHEM 140, CHEM 140L, and BIOL 210 ​, HSCI 210 ",requirements
+MATH 203 - Introduction to Statistics,3,N/A,one of the following
+PSY 203 - Statistics for Behavioral Sciences,3,"MATH 100, MATH 100L, PSY 101, equivalents",one of the following
+"BIOL 317 - Microbiology, Lecture and Laboratory",4,"BIOL 204, BIOL 208 ",requirements
+HSCI 310 - Advanced Anatomy,3,"BIOL 204, and BIOL 210, HSCI 210 ",requirements
+"BIOL 330 - General Genetics, Lecture and Laboratory",4,"BIOL 204, BIOL 208 ",requirements
+FSN 200 - Nutrition for Life,3,N/A,requirements
+"BIOL 208 - Introduction to Molecular Genetics, Lecture and Laboratory",4,"BIOL 204, a score of 4, 5 on the AP, IB Biology exam",requirements
+HSCI 460 - Principles of Pharmacology,3,"BIOL 365, HSCI 365 ",requirements
+HSCI 490 - Independent Internship,½-3,N/A,electives
+PHIL 314 - Medical Ethics,3,N/A,electives
+HSCI 340 - Science of Obesity,3,N/A,electives
+CHEM 230 - Organic Chemistry I,3,"CHEM 150, CHEM 150L ",electives
+HSCI 440 - Applied Human Neurophysiology,3,N/A,electives
+HSCI 491 - Student-Faculty Research/Creative Activity,1-3,consent of instructor,electives
+PSY 327 - Life Span Development,3,PSY 101 ,psychology electives
+PSY 317 - Cognitive Psychology,3,PSY 101 ,psychology electives
+PSY 436 - Health Psychology,3,PSY 101 ,psychology electives
+PSY 328 - Abnormal Psychology,3,PSY 101 ,psychology electives
+PSY 323 - Child Development,3,PSY 101 ,psychology electives
+"PHYS 108 - General Physics for the Life Sciences II, Lecture and Laboratory",4,"PHYS 107, MATH 110, MATH 115 ",requirements
+MATH 111 - Single Variable Calculus II,3,"MATH 110, MATH 115 ",requirements
+"PHYS 107 - General Physics for the Life Sciences I, Lecture and Laboratory",4,"MATH 110, MATH 115 ",requirements
+BIOL 205 - Evolution and Diversity of Multicellular Organisms (Gen Biol II),3,N/A,requirements
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",requirements
+"HSCI 345 - Pathophysiology: Diet, Disease and Exercise",3,N/A,requirements
+"HSCI 465 - Applied Exercise Physiology, Lecture and Lab",4,N/A,requirements
+HSCI 301 - Biomechanics and Functional Anatomy,3,N/A,electives
+CHEM 331 - Organic Chemistry II,3,"CHEM 230, CHEM 230L ",electives
+"BCHM 335 - Biochemistry I-Biomolecules, Lecture and Laboratory",4,CHEM 331 ,electives
+CHEM 230 - Organic Chemistry I,3,"CHEM 150, CHEM 150L ",electives
+"HSCI 407 - Applied Nutrition for Exercise, Training, and Performance",3,N/A,electives
+HSCI 490 - Independent Internship,½-3,N/A,electives
+HSCI 491 - Student-Faculty Research/Creative Activity,1-3,consent of instructor,electives
+PSY 328 - Abnormal Psychology,3,PSY 101 ,psychology
+PSY 327 - Life Span Development,3,PSY 101 ,psychology
+PSY 345 - Sports Psychology,3,PSY 101 ,psychology
+PSY 323 - Child Development,3,PSY 101 ,psychology
+PSY 436 - Health Psychology,3,PSY 101 ,psychology

@@ -1,0 +1,38 @@
+Course Name,Credits,Prerequisites,Category
+MATH 115 - Accelerated Calculus Part I: Differentiation and Integration,4,"MATH 101, equivalent",Introductory Calculus
+MATH 111 - Single Variable Calculus II,3,"MATH 110, MATH 115 ",Introductory Calculus
+"MATH 116 - Accelerated Calculus Part II: Series, Differential Equations and Multivariable Calculus",4,MATH 115 ,Introductory Calculus
+MATH 210 - Multivariable Calculus,3,MATH 111 ,Introductory Calculus
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",Introductory Calculus
+PHYS 101 - General Physics I,3,"MATH 110, MATH 115 ",core requirements
+PHYS 102 - General Physics II,3,"PHYS 101, and MATH 111, MATH 115 ",core requirements
+PHYS 201 - General Physics III,3,PHYS 102 ,core requirements
+PHYS 220 - Scientific Computing I,3,N/A,core requirements
+MATH 215 - Introduction to Linear Algebra and Differential Equations,3,"MATH 111, MATH 116 ",core requirements
+PHYS 323 - Scientific Computing II,3,"PHYS 220, MATH 220 ",core requirements
+PHYS 321 - Mechanics II,3,"PHYS 320, MATH 215 ",upper-division requirements
+PHYS 320 - Mechanics I,3,"PHYS 101  and MATH 210, MATH 116 ",upper-division requirements
+PHYS 421 - Electricity and Magnetism I,3,N/A,upper-division requirements
+PHYS 310 - Mathematical Methods for Physics and Engineering,3,MATH 215 ,upper-division requirements
+PHYS 422 - Electricity and Magnetism II,3,"PHYS 310, PHYS 421 ",upper-division requirements
+PHYS 430 - Thermal and Statistical Physics I,3,"PHYS 201, PHYS 207 ",upper-division requirements
+PHYS 431 - Thermal and Statistical Physics II,3,PHYS 430 ,upper-division requirements
+PHYS 451 - Quantum Mechanics I,3,N/A,upper-division requirements
+PHYS 452 - Quantum Mechanics II,3,PHYS 451 ,upper-division requirements
+PHYS 326 - Astrophysics and Cosmology,3,"PHYS 101, PHYS 107 ",electives
+MATH 315 - Linear Algebra II (Advanced Linear Algebra),3,N/A,electives
+PHYS 325 - Biophysics,3,"MATH 111, MATH 115  and PHYS 107, PHYS 108, PHYS 101, PHYS 102 ",electives
+"CHEM 340 - Physical Chemistry-Quantum Chemistry, Lecture and Laboratory",4,"PHYS 102, CHEM 150  and MATH 116, MATH 210 ",electives
+PHYS 340 - Quantum Information Science,3,N/A,electives
+BIOL 345 - Comparative Biomechanics,3,N/A,electives
+MATH 350 - Differential Equations,3,N/A,electives
+PHYS 350 - Experimental Methods in Optics,3,"PHYS 102, MATH 215 ",electives
+MATH 360 - Probability Theory,3,"MATH 116, MATH 210 ",electives
+PHYS 351 - Philosophy and Foundations of Quantum Mechanics,3,N/A,electives
+"BCHM 420 - Physical Biochemistry, Lecture and Laboratory",4,"BCHM 208, BCHM 335, PHYS 108 ",electives
+"CHEM 441 - Physical Chemistry-Thermodynamics and Kinetics, Lecture and Laboratory",4,"PHYS 102, CHEM 150, and MATH 116, MATH 210 ",electives
+CHEM 451 - Molecular Spectroscopy,3,N/A,electives
+MATH 451 - Complex Analysis,3,MATH 450 ,electives
+PHYS 491 - Student-Faculty Research/Creative Activity,1-3,consent of instructor,electives
+PHYS 499 - Individual Study,1-3,"consent of instructor, approval of petition",electives
+PHYS 498 - Physics Capstone,2,N/A,Capstone requirement

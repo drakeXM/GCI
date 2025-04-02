@@ -1,0 +1,34 @@
+Course Name,Credits,Prerequisites,Category
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",lower-division requirements
+ENGR 101 - Foundations of Design and Fabrication,3,N/A,lower-division requirements
+MATH 203 - Introduction to Statistics,3,N/A,lower-division requirements
+ECON 200 - Principles of Microeconomics,3,"MATH 100, equivalent",lower-division requirements
+MGSC 220 - Foundations of Business Analytics,3,"MGSC 209, MATH 203, PSY 203, with a minimum grade of C-",lower-division requirements
+CPSC 230 - Computer Science I,3,MATH 100 ,lower-division requirements
+CPSC 231 - Computer Science II,3,"CPSC 230, equivalent",lower-division requirements
+CPSC 293 - Mathematical Foundations of Machine Learning,3,"CPSC 230, MATH 203  and MATH 110, MATH 115 ",lower-division requirements
+CPSC 285 - Social and Ethical Issues in Computing,3,N/A,lower-division requirements
+CPSC 350 - Data Structures and Algorithms,3,"CPSC 231, CENG 231 ",upper-division requirements
+MGSC 310 - Statistical Models in Business Analytics,3,MGSC 220  with a minimum grade of C-,upper-division requirements
+CPSC 349 - Human Factors,3,"CPSC 230, GAME 230 ",upper-division requirements
+CPSC 355 - Human Computer Interaction,3,"CENG 231, CPSC 231, CPSC 236  and CPSC 349 ",upper-division requirements
+CPSC 353 - Data Communications and Computer Networks,3,"CENG 231, CPSC 231, CPSC 236 ",upper-division requirements
+CPSC 390 - Artificial Intelligence,3,N/A,upper-division requirements
+CPSC 393 - Machine Learning,3,CPSC 392 ,upper-division requirements
+CPSC 408 - Database Management,3,N/A,upper-division requirements
+MGSC 410 - Applied Business Analytics,3,"MGSC 310, CPSC 392, with a minimum grade of C- in each prerequisite",upper-division requirements
+CPSC 392 - Introduction to Data Science,3,"CPSC 230, and MATH 203, MATH 303, MGSC 209 ",upper-division requirements
+CPSC 358 - Assistive Technology,3,N/A,electives
+"ENV 310 - Geographic Information Systems, Lecture and Laboratory",4,N/A,electives
+CPSC 359 - Computer-Supported Cooperative Work,3,CPSC 355 ,electives
+MATH 360 - Probability Theory,3,"MATH 116, MATH 210 ",electives
+MATH 303 - Biostatistics,3,"MATH 101, equivalent, MATH 109  with a grade C, above",electives
+MATH 361 - Mathematical Statistics,3,MATH 360 ,electives
+ISP 363 - Cybersecurity 1,3,CPSC 353 ,electives
+CPSC 430 - Computational Economics,4,"MATH 110  and CPSC 230, CPSC 236, consent of instructor",electives
+CPSC 435 - BioMedical Informatics,3,CPSC 230 ,electives
+MGSC 406 - Advanced Experimental Design and Statistics,3,"MATH 203, MGSC 209, equivalent, and advanced standing",electives
+CPSC 445 - High Performance Computing,3,"CPSC 350, consent of instructor",electives
+ECON 452 - Econometrics,3,"ECON 200, ECON 201, and MATH 109, MATH 110, and MGSC 209, MATH 203, with a minimum grade of C- in each prerequisite and ACBE major, computational science, economics, mathematics minor, enrollment in the Applied Statistical Analysis Certificate program",electives
+CPSC 458 - Web Engineering,3,CPSC 350,electives
+MGSC 496 - Special Topics in Management Science,3,N/A,electives

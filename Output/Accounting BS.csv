@@ -1,0 +1,25 @@
+Course Name,Credits,Prerequisites,Category
+MATH 109 - Calculus with Applications in Business and Social Science,3,"MATH 100, equivalent",lower-division core requirements
+ACTG 210 - Introduction to Financial Accounting,3,"MATH 109, MATH 110, equivalent, with a minimum grade of C-",lower-division core requirements
+ECON 201 - Principles of Macroeconomics,3,"MATH 100, equivalent",lower-division core requirements
+ECON 200 - Principles of Microeconomics,3,"MATH 100, equivalent",lower-division core requirements
+MGSC 209 - Introductory Business Statistics,3,"MATH 109, MATH 110, with a minimum grade of C-",lower-division core requirements
+BUS 215 - Legal Environment of Business,3,ECON 200  with a minimum grade of C-,lower-division core requirements
+MGSC 220 - Foundations of Business Analytics,3,"MGSC 209, MATH 203, PSY 203, with a minimum grade of C-",lower-division core requirements
+ACTG 211 - Introduction to Managerial Accounting,3,ACTG 210  with a minimum grade of C-,lower-division core requirements
+COM 219 - Business and Professional Communication for Business Majors,3,"accounting, business administration, exploratory major",communications requirement
+MGMT 316 - Management of Organizations,3,"ACTG 210, ECON 200, ECON 201, and MATH 109, MATH 110, with a minimum grade of C- in each prerequisite",upper-division core requirements
+MGSC 346 - Production and Operations Management,3,"MATH 203, MGSC 209, with a minimum grade of C-",upper-division core requirements
+FIN 317 - Financial Management,3,"ACTG 210, ECON 200, ECON 201, and MGSC 209, MATH 203, and MATH 109, MATH 110, with a minimum grade of C- in each prerequisite",upper-division core requirements
+MKTG 304 - Marketing,3,"ECON 200, ECON 201, ACTG 210, and MGSC 209, MATH 203, and MATH 109, MATH 110, with a minimum grade of C- in each prerequisite",upper-division core requirements
+ACTG 450 - Individual Taxation,3,ACTG 211  with a minimum grade of C-,upper-division accounting core requirements
+ACTG 330 - Intermediate Financial Accounting I,3,ACTG 210  with a minimum grade of C-,upper-division accounting core requirements
+ACTG 339 - Accounting Information Systems,3,"ACTG 330  with a minimum grade of C-, consent of instructor",upper-division accounting core requirements
+ACTG 440 - Accounting for Investments and Consolidations,3,"ACTG 331, equivalent, with a minimum grade of C-",upper-division accounting core requirements
+ACTG 331 - Intermediate Financial Accounting II,3,"ACTG 211, ACTG 330, with a minimum grade of C- in each prerequisite",upper-division accounting core requirements
+ACTG 451 - Taxation of Corporations and Other Entities,3,ACTG 211  with a minimum grade of C-,upper-division accounting core requirements
+ACTG 460 - Auditing,3,"ACTG 330, ACTG 339, with a minimum grade of C- in each prerequisite",upper-division accounting core requirements
+ACTG 461 - Accounting Analytics,3,"accounting major, ACTG 339  and ACTG 460, equivalent, with a minimum grade of C- in each prerequisite",upper-division accounting core requirements
+ACTG 320 - Cost Accounting I,3,ACTG 211  with a minimum grade of C-,upper-division accounting core requirements
+"ACTG 441 - Not-For Profit and Government Accounting, and International Accounting",3,"ACTG 331, equivalent, with a minimum grade of C-",upper-division accounting core requirements
+BUS 475 - Business Policy: An International Perspective,3,"senior standing, completion of lower and upper-division core requirements",upper-division capstone requirement

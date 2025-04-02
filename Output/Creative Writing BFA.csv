@@ -1,0 +1,127 @@
+Course Name,Credits,Prerequisites,Category
+ENG 497 - Capstone Course in Creative Writing,3,"ENG 403, ENG 404, and senior standing",core creative writing
+ENG 304 - Creative Writing: Special Topics,3,ENG 204 ,core creative writing
+ENG 304A - Creative Writing Special Topics: Experimental Writing,3,ENG 204 ,core creative writing
+ENG 304B - Creative Writing Special Topics: Science or Speculative Fiction Writing,3,ENG 204 ,core creative writing
+ENG 204 - Introduction to Creative Writing,3,N/A,core creative writing
+"ENG 304C - Creative Writing Special Topics: Writing Health, Disability, Science",3,ENG 204 ,core creative writing
+ENG 304D - Creative Writing Special Topics: Young Adult Writing,3,ENG 204 ,core creative writing
+ENG 404 - Techniques in Writing Fiction,3,ENG 204 ,core creative writing
+ENG 403 - Techniques in Poetry Writing,3,ENG 204 ,core creative writing
+ENG 422 - Techniques in Creative Nonfiction,3,ENG 204 ,core creative writing
+ENG 405 - Advanced Workshop in Poetry Writing,3,ENG 204 ,core creative writing
+ENG 406 - Advanced Workshop in Writing Fiction,3,ENG 204 ,core creative writing
+ENG 419 - Advanced Workshop in Creative Nonfiction,3,ENG 204 ,core creative writing
+ENG 304A - Creative Writing Special Topics: Experimental Writing,3,ENG 204 ,elective creative writing courses
+ENG 228 - Introduction to Screenwriting,3,"creative writing major, English minor",elective creative writing courses
+ENG 227 - Writing the One-Act Play,3,N/A,elective creative writing courses
+ENG 304B - Creative Writing Special Topics: Science or Speculative Fiction Writing,3,ENG 204 ,elective creative writing courses
+ENG 304 - Creative Writing: Special Topics,3,ENG 204 ,elective creative writing courses
+"ENG 304C - Creative Writing Special Topics: Writing Health, Disability, Science",3,ENG 204 ,elective creative writing courses
+ENG 304D - Creative Writing Special Topics: Young Adult Writing,3,ENG 204 ,elective creative writing courses
+ENG 310 - Writing Creative Nonfiction,3,"ENG 204, ENG 208 ",elective creative writing courses
+ENG 312 - Writing the Short Story,3,ENG 204 ,elective creative writing courses
+ENG 313 - Writing Southern California,3,"ENG 204, ENG 310 ",elective creative writing courses
+ENG 314 - Writing the Novel,3,ENG 204 ,elective creative writing courses
+ENG 316 - Writing Poetry,3,ENG 204 ,elective creative writing courses
+ENG 318 - Intermediate Screenwriting,3,ENG 204 ,elective creative writing courses
+ENG 328 - Writing for Video Games,3,"ENG 204  and English major, Creative Writing major, English minor, Creative and Cultural Industries minor, Animation and Visual Effects major, Film and Media Studies major, Screenwriting major, Writing for Film and Television major, VR and AR minor, Game Development Programming minor, Game Development Themed inquiry",elective creative writing courses
+ENG 351 - Writing the Graphic Novel,3,ENG 204 ,elective creative writing courses
+ENG 405 - Advanced Workshop in Poetry Writing,3,ENG 204 ,elective creative writing courses
+ENG 406 - Advanced Workshop in Writing Fiction,3,ENG 204 ,elective creative writing courses
+ENG 414 - Narrative Nonfiction,3,N/A,elective creative writing courses
+ENG 419 - Advanced Workshop in Creative Nonfiction,3,ENG 204 ,elective creative writing courses
+ENG 256 - Introduction to Literary Theory and Criticism,3,N/A,core literature and theory
+ENG 221 - Literature I (antiquity to 1400 CE),3,N/A,core literature and theory
+ENG 222 - Literature II (1400-1800 CE),3,N/A,core literature and theory
+ENG 270 - Foundations of Rhetorical Studies,3,N/A,core literature and theory
+ENG 223 - Literature III (1800 CE-present),3,N/A,core literature and theory
+ENG 250 - Introduction to Fiction,3,N/A,core literature and theory
+ENG 252 - Introduction to Poetry,3,N/A,core literature and theory
+ENG 407 - Literary Forum: Tabula Poetica Poetry Reading Series,3,ENG 204 ,core literature and theory
+ENG 409 - Literary Forum: John Fowles Center Contemporary Writers Core,3,ENG 204 ,core literature and theory
+ENG 271 - Introduction to Linguistics,3,N/A,elective literature/rhetoric upper-division courses
+ENG 302 - Writing About Diverse Cultures,3,N/A,elective literature/rhetoric upper-division courses
+ENG 302B - Disability and Creative Writing,3,none,elective literature/rhetoric upper-division courses
+ENG 224 - Introduction to Latinx Literature,3,N/A,elective literature/rhetoric upper-division courses
+ENG 302A - Representing Self/Others,3,N/A,elective literature/rhetoric upper-division courses
+ENG 321B - African American Literature Post-1950,3,N/A,elective literature/rhetoric upper-division courses
+ENG 321A - African American Literature 1880s-1940s,3,N/A,elective literature/rhetoric upper-division courses
+ENG 339 - World Literature from 1900 to the Present,3,N/A,elective literature/rhetoric upper-division courses
+ENG 327 - Multicultural Literatures of the U.S.,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 345A - Gender in Victorian England,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 347 - Topics in Literary and Cultural Studies,3,N/A,elective literature/rhetoric upper-division courses
+ENG 380 - Latinx and Indigenous Rhetorics,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444 - Topics in Rhetoric,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444A - Feminist Rhetorics,3,N/A,elective literature/rhetoric upper-division courses
+ENG 424 - Topics in Latinx Literature,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444C - Queer Rhetorics,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444B - Copyright/Copyleft: Sampling/Plagiarism/Appropriation/Reinvention?,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444D - Posthuman Rhetorics,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444E - Technical Communication and Social Justice,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444F - Pedagogies of Freedom: Paulo Freire and bell hooks,3,N/A,elective literature/rhetoric upper-division courses
+ENG 444G - Seminar on Foucault,3,N/A,elective literature/rhetoric upper-division courses
+ENG 449 - Literature in Translation,3,written inquiry,elective literature/rhetoric upper-division courses
+"ENG 472 - Film, Gender, Sexuality",3,N/A,elective literature/rhetoric upper-division courses
+ENG 320 - Topics in American Literature before 1870,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 320A - Reinventing American Literature,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 321 - Topics in American Literature after 1870,3,N/A,elective literature/rhetoric upper-division courses
+ENG 325 - Introduction to Shakespeare,3,N/A,elective literature/rhetoric upper-division courses
+ENG 326 - Topics in American Literature,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 329 - Experimental Course,3,N/A,elective literature/rhetoric upper-division courses
+ENG 337 - Topics in British Literature,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 340 - The Bible as Literature: The Hebrew Scriptures,3,N/A,elective literature/rhetoric upper-division courses
+ENG 341 - The Bible as Literature: The Christian Scriptures,3,N/A,elective literature/rhetoric upper-division courses
+ENG 344 - Topics in British Literature before 1850,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 344A - The English Gothic Novel,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 344B - The English Epic,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 344C - Revenge Narratives,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 345 - Topics in British Literature after 1850,3,"ENG 256, HIST 313 ",elective literature/rhetoric upper-division courses
+ENG 346 - Special Studies in Literature,3,N/A,elective literature/rhetoric upper-division courses
+ENG 447 - Advanced Topics in Literary and Cultural Studies,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 347A - Cognition and the Novel,3,N/A,elective literature/rhetoric upper-division courses
+ENG 355 - Theater in England,3,N/A,elective literature/rhetoric upper-division courses
+ENG 357 - Topics in Humanomics,3,N/A,elective literature/rhetoric upper-division courses
+"ENG 360 - War, Memory, and Literature",3,N/A,elective literature/rhetoric upper-division courses
+ENG 371 - Discourse Analysis,3,N/A,elective literature/rhetoric upper-division courses
+ENG 372 - Language and Ideology,3,N/A,elective literature/rhetoric upper-division courses
+ENG 407 - Literary Forum: Tabula Poetica Poetry Reading Series,3,ENG 204 ,elective literature/rhetoric upper-division courses
+ENG 409 - Literary Forum: John Fowles Center Contemporary Writers Core,3,ENG 204 ,elective literature/rhetoric upper-division courses
+ENG 430 - Shakespeare’s Comedies and Histories,3,"ENG 256, HIST 308, TH 322 ",elective literature/rhetoric upper-division courses
+ENG 441 - Topics in Drama,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 443 - Topics in Fiction,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 432 - Shakespeare’s Tragedies and Romances,3,"ENG 256, HIST 308, TH 322 ",elective literature/rhetoric upper-division courses
+ENG 443A - Topics in Fiction: American Fiction of the 1920s,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 445 - Major Author(s),3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 445A - Flipping Jane Austen,3,ENG 256,elective literature/rhetoric upper-division courses
+ENG 447-IRE - The “Real” Westeros: Game of Thrones and Northern Ireland,3,N/A,elective literature/rhetoric upper-division courses
+ENG 445B - Henry James and Edith Wharton,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 447A - Banned Books,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 447B - Literature and Terror,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 447C - The Harlem Renaissance,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 471 - The Rhetoric of Fiction,3,N/A,elective literature/rhetoric upper-division courses
+ENG 456 - Topics in Literary Theory and Criticism,3,ENG 256 ,elective literature/rhetoric upper-division courses
+ENG 211 - Introduction to Digital Journalism Workshop,3,"or corequisite, ENG 215, consent of instructor",elective practice
+ENG 210 - News Reporting and Writing Workshop,3,"ENG 215, consent of instructor",elective practice
+ENG 218 - Introduction to Digital Design for Journalists,3,"ENG 215, corequisite, ENG 215, consent of instructor",elective practice
+ENG 253 - Photojournalism,3,N/A,elective practice
+ENG 215 - Theory and Practice of Journalism and Reporting,3,N/A,elective practice
+ENG 271 - Introduction to Linguistics,3,N/A,elective practice
+ENG 305 - Business Writing,3,N/A,elective practice
+ENG 308 - Public Affairs Reporting,3,"ENG 210, ENG 215 ",elective practice
+ENG 311 - Podcasting: The Art of Storytelling,3,N/A,elective practice
+ENG 319 - Digital Magazine Workshop for Journalists,3,N/A,elective practice
+ENG 370 - Technical Writing,3,N/A,elective practice
+ENG 323 - Journalists as Historians,3,"ENG 215, HIST 296, and English, history major, minor",elective practice
+ENG 371 - Discourse Analysis,3,N/A,elective practice
+ENG 373 - Rhetorical Criticism,3,N/A,elective practice
+ENG 374 - Environmental Rhetoric,3,N/A,elective practice
+ENG 375 - Composing New Media,3,N/A,elective practice
+ENG 411 - Advanced Digital Journalism Workshop,3,"ENG 211, consent of instructor",elective practice
+ENG 410 - Advanced Reporting and Editing Workshop for Journalists,3,"ENG 210, ENG 308, consent of instructor",elective practice
+ENG 415 - Topics in Journalism,3,ENG 215,elective practice
+ENG 418 - Advanced Digital Design for Journalists,3,"ENG 218, consent of instructor",elective practice
+ENG 421 - Humanities Computing,3,N/A,elective practice
+"ENG 481 - Theory and Practice of Writing, Tutoring, and Conferencing",3,written inquiry,elective practice
+ENG 491 - Student-Faculty Research/Creative Activity,1-3,consent of instructor,elective practice
+ENG 490 - Independent Internship,½-3,"written inquiry, consent of instructor",elective practice

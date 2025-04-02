@@ -1,0 +1,40 @@
+Course Name,Credits,Prerequisites,Category
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",core requirements
+MATH 210 - Multivariable Calculus,3,MATH 111 ,core requirements
+"MATH 116 - Accelerated Calculus Part II: Series, Differential Equations and Multivariable Calculus",4,MATH 115 ,core requirements
+MATH 115 - Accelerated Calculus Part I: Differentiation and Integration,4,"MATH 101, equivalent",core requirements
+MATH 111 - Single Variable Calculus II,3,"MATH 110, MATH 115 ",core requirements
+MATH 215 - Introduction to Linear Algebra and Differential Equations,3,"MATH 111, MATH 116 ",core requirements
+MATH 220 - Scientific Computing I,3,N/A,core requirements
+PHYS 220 - Scientific Computing I,3,N/A,core requirements
+MATH 250 - Discrete Mathematics I,3,"MATH 101, equivalent",core requirements
+CPSC 230 - Computer Science I,3,MATH 100 ,core requirements
+MATH 315 - Linear Algebra II (Advanced Linear Algebra),3,N/A,upper division requirements
+MATH 360 - Probability Theory,3,"MATH 116, MATH 210 ",upper division requirements
+MATH 440 - Topology,3,"MATH 211, MATH 215 and MATH 250 
+   Topology studies the general concept of continuity and those properties of spaces that are preserved by continuous functions",upper division requirements
+MATH 380 - Introduction to Abstract Algebra,3,MATH 250 ,upper division requirements
+MATH 450 - Real Analysis,3,"MATH 116, MATH 210  and MATH 250 ",upper division requirements
+MATH 454 - Numerical Analysis,3,N/A,upper division requirements
+MATH 460 - Modern Algebra,3,MATH 380 ,upper division requirements
+MATH 451 - Complex Analysis,3,MATH 450 ,upper division requirements
+PHYS 101 - General Physics I,3,"MATH 110, MATH 115 ",general science requirement
+CHEM 140 - General Chemistry I,3,N/A,general science requirement
+"PHYS 107 - General Physics for the Life Sciences I, Lecture and Laboratory",4,"MATH 110, MATH 115 ",general science requirement
+PHYS 102 - General Physics II,3,"PHYS 101, and MATH 111, MATH 115 ",general science requirement
+"PHYS 108 - General Physics for the Life Sciences II, Lecture and Laboratory",4,"PHYS 107, MATH 110, MATH 115 ",general science requirement
+BIOL 204 - From Molecules to Cells: Evolution of Life on Earth (Gen Biol I),3,N/A,general science requirement
+BIOL 205 - Evolution and Diversity of Multicellular Organisms (Gen Biol II),3,N/A,general science requirement
+CHEM 150 - General Chemistry II,3,"CHEM 140, CHEM 140L ",general science requirement
+MATH 260 - Number Theory,3,"MATH 111, MATH 115 ",electives
+MATH 310 - History of Mathematics,3,"MATH 110, MATH 115 ",electives
+MATH 280 - Mathematics Tutoring,3,"MATH 101, equivalent",electives
+MATH 208 - Foundations of Geometry,3,"MATH 100, equivalent",electives
+PHYS 201 - General Physics III,3,PHYS 102 ,electives
+MATH 350 - Differential Equations,3,N/A,electives
+MATH 352 - Discrete Mathematics II,3,MATH 250 ,electives
+MATH 361 - Mathematical Statistics,3,MATH 360 ,electives
+MATH 370 - Special Topics in Mathematics,3,N/A,electives
+MATH 390 - Introduction to Differential Geometry,3,"MATH 116, MATH 210 ",electives
+MATH 490 - Independent Internship,1-6,consent of instructor,electives
+MATH 499 - Individual Study,½-6,"B average in mathematics courses, consent of instructor",electives

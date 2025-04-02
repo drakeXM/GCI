@@ -1,0 +1,41 @@
+Course Name,Credits,Prerequisites,Category
+BIOL 204 - From Molecules to Cells: Evolution of Life on Earth (Gen Biol I),3,N/A,biology core
+BIOL 205 - Evolution and Diversity of Multicellular Organisms (Gen Biol II),3,N/A,biology core
+"PHYS 107 - General Physics for the Life Sciences I, Lecture and Laboratory",4,"MATH 110, MATH 115 ",science core
+CHEM 140 - General Chemistry I,3,N/A,science core
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",science core
+"PHYS 108 - General Physics for the Life Sciences II, Lecture and Laboratory",4,"PHYS 107, MATH 110, MATH 115 ",science core
+MATH 111 - Single Variable Calculus II,3,"MATH 110, MATH 115 ",science core
+CHEM 150 - General Chemistry II,3,"CHEM 140, CHEM 140L ",science core
+CPSC 292 - Introduction to Exploratory Data Analysis,3,N/A,science core
+CHEM 230 - Organic Chemistry I,3,"CHEM 150, CHEM 150L ",science core
+MATH 303 - Biostatistics,3,"MATH 101, equivalent, MATH 109  with a grade C, above",science core
+BIOL 498 - Capstone Course for Biological Sciences Majors,3,"MATH 303, biological sciences major, senior standing, consent of instructor",capstone course
+"BIOL 208 - Introduction to Molecular Genetics, Lecture and Laboratory",4,"BIOL 204, a score of 4, 5 on the AP, IB Biology exam",molecular biology area of study
+BIOL 224 - Artificial Intelligence in Biology and Medicine: An Introduction,3,N/A,molecular biology area of study
+"BIOL 317 - Microbiology, Lecture and Laboratory",4,"BIOL 204, BIOL 208 ",molecular biology area of study
+BIOL 302 - Introduction to Bioinformatics,3,"BIOL 208  and either CPSC 230, CPSC 292 ",molecular biology area of study
+"BIOL 330 - General Genetics, Lecture and Laboratory",4,"BIOL 204, BIOL 208 ",molecular biology area of study
+"BCHM 335 - Biochemistry I-Biomolecules, Lecture and Laboratory",4,CHEM 331 ,molecular biology area of study
+BCHM 337 - Immunology,3,"BCHM 208, BIOL 208  and CHEM 230, CHEM 230L ",molecular biology area of study
+BIOL 401 - Cancer Biology,3,N/A,molecular biology area of study
+BIOL 417 - Medical Microbiology,3,"BIOL 217, BIOL 317 ",molecular biology area of study
+"BCHM 436 - Molecular Genetics, Lecture and Laboratory",4,"BCHM 208, BCHM 335 ",molecular biology area of study
+BCHM 438 - Virology,3,"BCHM 335, and BIOL 208, BCHM 208 ",molecular biology area of study
+BIOL 450 - Cell Biology,3,BIOL 204 ,molecular biology area of study
+BIOL 345 - Comparative Biomechanics,3,N/A,anatomy and physiology area of study
+BIOL 309 - Hormones and Behavior,3,N/A,anatomy and physiology area of study
+BIOL 365 - Human Physiology Part A,3,N/A,anatomy and physiology area of study
+"BIOL 210 - Human Anatomy, Lecture and Laboratory",4,N/A,anatomy and physiology area of study
+BIOL 343 - Computational Neuroscience,4,N/A,anatomy and physiology area of study
+"BIOL 366 - Human Physiology Part B, Lecture and Laboratory",4,N/A,anatomy and physiology area of study
+BIOL 385 - Comparative Physiology,3,"BIOL 204, BIOL 205, equivalent",anatomy and physiology area of study
+BIOL 407 - Neuroanatomy and Neurophysiology,3,BIOL 204 ,anatomy and physiology area of study
+BIOL 410 - Developmental Biology,3,BIOL 208 ,anatomy and physiology area of study
+BIOL 369 - Evolution: From DNA to Dinosaurs,3,"BIOL 204, BIOL 205 ",ecology and evolution area of study
+"BIOL 319 - Ecosystem Ecology, Lecture and Laboratory",4,BIOL 205 ,ecology and evolution area of study
+"BIOL 338 - Ornithology, Lecture and Laboratory",4,"BIOL 205, consent of instructor",ecology and evolution area of study
+"BIOL 301 - Plant Biology, Lecture and Laboratory",4,BIOL 205 ,ecology and evolution area of study
+"BIOL 324 - Ecology, Lecture and Laboratory",4,BIOL 205 ,ecology and evolution area of study
+"BIOL 433 - Animal Behavior, Lecture and Laboratory",4,BIOL 205 ,ecology and evolution area of study
+"BIOL 440 - Marine Biology, Lecture and Laboratory",4,BIOL 205 ,ecology and evolution area of study

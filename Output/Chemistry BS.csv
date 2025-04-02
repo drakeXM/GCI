@@ -1,0 +1,28 @@
+Course Name,Credits,Prerequisites,Category
+CHEM 150 - General Chemistry II,3,"CHEM 140, CHEM 140L ",introductory courses
+CHEM 140 - General Chemistry I,3,N/A,introductory courses
+PHYS 102 - General Physics II,3,"PHYS 101, and MATH 111, MATH 115 ",cognate courses
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",cognate courses
+MATH 210 - Multivariable Calculus,3,MATH 111 ,cognate courses
+MATH 111 - Single Variable Calculus II,3,"MATH 110, MATH 115 ",cognate courses
+PHYS 101 - General Physics I,3,"MATH 110, MATH 115 ",cognate courses
+CHEM 220 - Scientific Computing I,3,N/A,cognate courses
+"CHEM 310 - Analytical Chemistry I, Lecture and Laboratory",4,CHEM 230 ,chemistry foundation courses
+"CHEM 340 - Physical Chemistry-Quantum Chemistry, Lecture and Laboratory",4,"PHYS 102, CHEM 150  and MATH 116, MATH 210 ",chemistry foundation courses
+"BCHM 335 - Biochemistry I-Biomolecules, Lecture and Laboratory",4,CHEM 331 ,chemistry foundation courses
+"CHEM 301 - Inorganic Chemistry, Lecture and Laboratory",4,"CHEM 230, consent of instructor",chemistry foundation courses
+CHEM 230 - Organic Chemistry I,3,"CHEM 150, CHEM 150L ",chemistry foundation courses
+"CHEM 441 - Physical Chemistry-Thermodynamics and Kinetics, Lecture and Laboratory",4,"PHYS 102, CHEM 150, and MATH 116, MATH 210 ",chemistry in-depth courses
+CHEM 331 - Organic Chemistry II,3,"CHEM 230, CHEM 230L ",chemistry in-depth courses
+"CHEM 411 - Analytical Chemistry II, Lecture and Laboratory",4,CHEM 331 ,chemistry in-depth courses
+CHEM 325 - Atmospheric Chemistry,3,CHEM 331 ,electives
+BCHM 336 - Biochemistry II-Biometabolism,3,CHEM 331 ,electives
+CHEM 338 - Symmetry in Chemistry,3,CHEM 230 ,electives
+MATH 215 - Introduction to Linear Algebra and Differential Equations,3,"MATH 111, MATH 116 ",electives
+CHEM 327 - Environmental Geochemistry,3,CHEM 150 ,electives
+BCHM 350 - Medicinal Chemistry,3,"CHEM 150, CHEM 331, consent of instructor",electives
+"BCHM 420 - Physical Biochemistry, Lecture and Laboratory",4,"BCHM 208, BCHM 335, PHYS 108 ",electives
+CHEM 432 - Advanced Organic Chemistry,3,CHEM 331 ,electives
+CHEM 444 - Computational Chemistry,3,"CHEM 331, CHEM 331L ",electives
+CHEM 451 - Molecular Spectroscopy,3,N/A,electives
+PHYS 451 - Quantum Mechanics I,3,N/A,electives

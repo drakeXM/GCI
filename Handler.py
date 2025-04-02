@@ -4,7 +4,6 @@ import requests
 import re
 import csv
 import threading
-import cProfile
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 from course import Course
@@ -19,7 +18,7 @@ def get_prerequisites(catoid, coid, retries=10):
     ajax_url = f"https://catalog.chapman.edu/ajax/preview_course.php?catoid={catoid}&coid={coid}&show"
     for attempt in range(retries):
         try:
-            time.sleep(1.1)  # Add a delay between retries
+            time.sleep(1)  # Add a delay between retries
             response = requests.get(ajax_url)
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, "html.parser")
@@ -70,7 +69,7 @@ def prerequisite_allocator(text: str):
 def parse_course_info(course_element, category):
     """Extracts course name, credits, and prerequisites from the course element."""
     course_text = course_element.text.strip()
-    match = re.search(r'(.+?)\s+([\d½¾¼.]+-[\d½¾¼.]+|[\d½¾¼.]+)\s+credits', course_text)
+    match = re.search(r'(.+?)\s+([\d½¾¼.]+-[\d½¾¼.]+|[\d½¾¼.]+)\s+credit', course_text)
     if match:
         obj_name = match.group(1).strip()
         obj_credits = match.group(2)
@@ -158,14 +157,13 @@ def process_degree(degree, folder_name):
                 
         print(f'Saved: {file_path_csv}')
 
+
+
 def parse_college(source_page):
     
     # Extracts degree program links and processes each degree to fetch its courses.
     
     folder_name = 'Output'  # Folder to store the parsed course data
-    cwd = os.getcwd()
-    final_dr = os.path.join(cwd, folder_name)
-    print(final_dr)
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
     

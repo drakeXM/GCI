@@ -1,0 +1,33 @@
+Course Name,Credits,Prerequisites,Category
+BIOL 204 - From Molecules to Cells: Evolution of Life on Earth (Gen Biol I),3,N/A,requirements
+"BCHM 208 - Introduction to Molecular Genetics, Lecture and Laboratory",4,N/A,requirements
+CHEM 230 - Organic Chemistry I,3,"CHEM 150, CHEM 150L ",requirements
+CHEM 140 - General Chemistry I,3,N/A,requirements
+CHEM 150 - General Chemistry II,3,"CHEM 140, CHEM 140L ",requirements
+CHEM 331 - Organic Chemistry II,3,"CHEM 230, CHEM 230L ",requirements
+"BCHM 335 - Biochemistry I-Biomolecules, Lecture and Laboratory",4,CHEM 331 ,requirements
+BCHM 336 - Biochemistry II-Biometabolism,3,CHEM 331 ,requirements
+"BCHM 436 - Molecular Genetics, Lecture and Laboratory",4,"BCHM 208, BCHM 335 ",requirements
+"BCHM 420 - Physical Biochemistry, Lecture and Laboratory",4,"BCHM 208, BCHM 335, PHYS 108 ",requirements
+"CHEM 310 - Analytical Chemistry I, Lecture and Laboratory",4,CHEM 230 ,electives
+"BIOL 330 - General Genetics, Lecture and Laboratory",4,"BIOL 204, BIOL 208 ",electives
+BCHM 320 - Bioengineering and Biotechnology,3,BCHM 208 ,electives
+BIOL 302 - Introduction to Bioinformatics,3,"BIOL 208  and either CPSC 230, CPSC 292 ",electives
+"BIOL 317 - Microbiology, Lecture and Laboratory",4,"BIOL 204, BIOL 208 ",electives
+BCHM 337 - Immunology,3,"BCHM 208, BIOL 208  and CHEM 230, CHEM 230L ",electives
+CHEM 338 - Symmetry in Chemistry,3,CHEM 230 ,electives
+"CHEM 340 - Physical Chemistry-Quantum Chemistry, Lecture and Laboratory",4,"PHYS 102, CHEM 150  and MATH 116, MATH 210 ",electives
+BCHM 350 - Medicinal Chemistry,3,"CHEM 150, CHEM 331, consent of instructor",electives
+BCHM 401 - Cancer Biology,3,N/A,electives
+"CHEM 411 - Analytical Chemistry II, Lecture and Laboratory",4,CHEM 331 ,electives
+CHEM 432 - Advanced Organic Chemistry,3,CHEM 331 ,electives
+BCHM 438 - Virology,3,"BCHM 335, and BIOL 208, BCHM 208 ",electives
+CHEM 444 - Computational Chemistry,3,"CHEM 331, CHEM 331L ",electives
+BIOL 450 - Cell Biology,3,BIOL 204 ,electives
+BCHM 487 - Nutrigenomics,3,"BCHM 208, BIOL 208  and BCHM 335 ",electives
+"PHYS 107 - General Physics for the Life Sciences I, Lecture and Laboratory",4,"MATH 110, MATH 115 ",science requirements
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",science requirements
+MATH 210 - Multivariable Calculus,3,MATH 111 ,science requirements
+"PHYS 108 - General Physics for the Life Sciences II, Lecture and Laboratory",4,"PHYS 107, MATH 110, MATH 115 ",science requirements
+MATH 111 - Single Variable Calculus II,3,"MATH 110, MATH 115 ",science requirements
+MATH 303 - Biostatistics,3,"MATH 101, equivalent, MATH 109  with a grade C, above",science requirements

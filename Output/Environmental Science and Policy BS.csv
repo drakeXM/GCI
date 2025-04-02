@@ -1,0 +1,53 @@
+Course Name,Credits,Prerequisites,Category
+ENV 120 - Earth Processes,3,N/A,science competency
+"ENV 250 - Environmental Biology, Lec/Lab",4,N/A,science competency
+CHEM 140 - General Chemistry I,3,N/A,science competency
+CHEM 150 - General Chemistry II,3,"CHEM 140, CHEM 140L ",science competency
+ENV 101 - Introduction to Environmental Science,3,"environmental science and policy major, environmental science, environmental studies minor",environmental science and policy competency
+ENV 374 - Environmental Politics and Policy,3,N/A,environmental science and policy competency
+ENV 102 - Introduction to Environmental Policy,3,N/A,environmental science and policy competency
+ECON 200 - Principles of Microeconomics,3,"MATH 100, equivalent",environmental science and policy competency
+ENV 201 - Introduction to Environmental Justice,3,"ENV 101, ENV 102 ",environmental science and policy competency
+ENV 303 - Mixed Methods in Environmental Statistics,3,N/A,"data acquisition, analysis and display"
+"ENV 310 - Geographic Information Systems, Lecture and Laboratory",4,N/A,"data acquisition, analysis and display"
+ENV 497 - Senior Capstone I,3,N/A,capstone series
+ENV 498 - Environmental Problem Solving: Senior Capstone and Seminar,3,"ENV 310, ENV 330, ENV 374 ",capstone series
+FFC 100B - First Year Foundations: Grand Challenges in Science and Engineering,3,"first-year students in Fowler School of Engineering, Schmid College have priority enrollment",biophysical science emphasis
+MATH 110 - Single Variable Calculus I,3,"MATH 101, equivalent",biophysical science emphasis
+ENV 320 - The Science of Climate Change,3,"ENV 111, ENV 111L, ENV 112 ",biophysical science emphasis
+ENV 301 - Environmental Geology,3,"ENV 111, ENV 112 ",biophysical science emphasis
+ENV 330 - Environmental Problem Solving: Energy and Matter Flow,3,"ENV 101, PHYS 107, CHEM 150, BIOL 205 ",biophysical science emphasis
+ENV 331 - Observing Earth from Above,3,ENV 101  and ENV 310 ,biophysical science emphasis
+ENV 345 - Restoration Ecology,3,"ENV 250, BIOL 205  and BIOL 205L ",biophysical science emphasis
+"ENV 402 - Diverse Perspectives in Conservation Biology, Lec/Lab",4,"ENV 250, BIOL 205  and BIOL 205L ",biophysical science emphasis
+ENV 420 - Environmental Hydrology,3,"ENV 101, and ENV 111 /ENV 111L, ENV 112 ",biophysical science emphasis
+ENV 440 - Remote Sensing of the Environment,3,"ENV 111, ENV 111L, ENV 112 ",biophysical science emphasis
+"BIOL 301 - Plant Biology, Lecture and Laboratory",4,BIOL 205 ,biophysical science emphasis
+"BIOL 319 - Ecosystem Ecology, Lecture and Laboratory",4,BIOL 205 ,biophysical science emphasis
+"BIOL 324 - Ecology, Lecture and Laboratory",4,BIOL 205 ,biophysical science emphasis
+"BIOL 338 - Ornithology, Lecture and Laboratory",4,"BIOL 205, consent of instructor",biophysical science emphasis
+"BIOL 433 - Animal Behavior, Lecture and Laboratory",4,BIOL 205 ,biophysical science emphasis
+CHEM 325 - Atmospheric Chemistry,3,CHEM 331 ,biophysical science emphasis
+"BIOL 440 - Marine Biology, Lecture and Laboratory",4,BIOL 205 ,biophysical science emphasis
+CHEM 327 - Environmental Geochemistry,3,CHEM 150 ,biophysical science emphasis
+ENV 490 - Independent Internship,1-3,consent of instructor,biophysical science emphasis
+ENV 491 - Student-Faculty Research/Creative Activity,1-3,consent of instructor,biophysical science emphasis
+FFC 100B - First Year Foundations: Grand Challenges in Science and Engineering,3,"first-year students in Fowler School of Engineering, Schmid College have priority enrollment",social science emphasis
+FFC 100D - First Year Foundations: Topics in Conversations on Engaging the World,3,first-year students in Wilkinson College have priority,social science emphasis
+HLHM 100 - Introductory Seminar in Health Humanities,3,N/A,social science emphasis
+PCST 150 - Introduction to Peace Studies,3,N/A,social science emphasis
+HUM 103 - Introduction to Ethnic Studies,3,N/A,social science emphasis
+POSC 120 - Introduction to International Relations,3,N/A,social science emphasis
+ENV 360 - Environmental Advocacy Through Story,3,"CCI 100, ENV 102 ",social science emphasis
+MATH 101 - Developing Mathematical and Study Skills for STEM,4,N/A,social science emphasis
+ENV 375 - Public Policy Process,3,N/A,social science emphasis
+ENV 350 - Corporate Sustainability Management,3,"Environmental Science and Policy major, Environmental Studies minor, ENV 102, ECON 200 ;, Entrepreneurship minor, ECON 200, MGSC 209, BUS 110, ACTG 210, ENTR 300, MKTG 304, MKTG 305, and one of the following: BUS 215, CRPR 312, ENTR 315 ",social science emphasis
+ENV 392 - Law and Policy of Water Resources Management,3,N/A,social science emphasis
+POSC 335 - Political Economy,3,N/A,social science emphasis
+POSC 346 - Environmental Law,3,POSC 110 ,social science emphasis
+ECON 465 - Environmental and Natural Resources Economics,3,"ECON 200, ECON 201, with a minimum grade of C- in each prerequisite",social science emphasis
+SOC 335 - Society and the Environment,3,"SOC 101, ENV 102, consent of instructor",social science emphasis
+POSC 370 - Energy Politics,3,N/A,social science emphasis
+POSC 378 - Special Topics in Public Policy,3,consent of instructor,social science emphasis
+ENV 490 - Independent Internship,1-3,consent of instructor,social science emphasis
+ENV 491 - Student-Faculty Research/Creative Activity,1-3,consent of instructor,social science emphasis

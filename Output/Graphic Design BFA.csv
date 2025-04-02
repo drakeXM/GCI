@@ -1,0 +1,30 @@
+Course Name,Credits,Prerequisites,Category
+ART 195 - Art and Text,3,N/A,requirements
+ART 122 - Objects and Space,3,"art, art history, graphic design major, minor",requirements
+GD 100 - Introduction to Lettering and Book Arts,3,"graphic design major, art, art history, graphic design minor",requirements
+GD 103 - Visualization - Perspective and Rendering,3,"graphic design major, art, art history, graphic design minor",requirements
+GD 102 - Research Methods for Designers,3,"graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 200 - Introduction to Graphic Design,3,"GD 102, GD 103, sophomore standing and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+"GD 202 - Interactive, UX and Web Design",3,"GD 102, GD 103, sophomore standing and graphic design major, art, art history, graphic design minor",requirements
+GD 201 - Typography,3,"GD 102, GD 103, sophomore standing and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 203 - Color,3,"GD 200, GD 201, sophomore standing and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 300 - Graphic Design,3,"GD 200, GD 201  and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 302 - Branding and Advertising Design,3,"GD 200, GD 201, GD 300, junior standing and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 303 - Information Design,3,"GD 103, GD 200, GD 201, sophomore standing and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 304 - History of Graphic Design,3,"GD 200, GD 201, and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 306 - 4D Design,3,"GD 200, GD 201, junior standing and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 307 - Advanced Typography,3,"GD 200, GD 201, GD 300, junior standing and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 310 - Sustainability and More Than Human Design Research,3,N/A,requirements
+"GD 312 - Designing Tomorrow: Ethics, Technology, and Social Vision",3,"GD 102, GD 103, consent of faculty",requirements
+GD 400 - Advanced Graphic Design,3,"GD 200, GD 201, GD 300, GD 302  and graphic design major, art, art history, graphic design minor and senior standing, consent of instructor",requirements
+GD 401 - Business Practices/Pre-internship,3,"GD 306, senior standing and graphic design major, art, art history, graphic design minor",requirements
+GD 402 - Advanced Interaction UX/UI and Web Design,3,"GD 200, GD 201, GD 202  and graphic design major, art, art history, graphic design minor, consent of instructor",requirements
+GD 408 - Graphic Design Portfolio,3,"GD 306, senior standing and graphic design major, art, art history, graphic design minor",requirements
+GD 410 - AI Research Through Design,3,N/A,requirements
+GD 490 - Independent Internship,½-6,"junior standing, consent of instructor and graphic design major, minor",requirements
+GD 290 - Independent Internship,½-3,"sophomore standing, consent of instructor and graphic design major, art, art history, graphic design minor",two of the following
+GD 390 - Independent Internship,½-3,"junior standing, consent of instructor and graphic design major, art, art history, graphic design minors",two of the following
+GD 309 - Illustration,3,"ART 124, ART 211, GD 103, GD 200  and art, graphic design major, art, graphic design minor",two of the following
+GD 308 - Sustainable Design (London),3,"GD 200, GD 201  and graphic design major, art, art history, graphic design minor, consent of instructor",two of the following
+GD 406 - Motion Design,3,"GD 200, GD 201, GD 300, GD 302  and graphic design major, art, art history, graphic design minor, consent of instructor",two of the following
+GD 407 - Studio C,3,"consent of instructor, sophomore standing and graphic design major, art, art history, graphic design minor",two of the following
