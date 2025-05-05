@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapman University Interactive Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <style>
+        /* Style for the map container */
+        /* This div will hold the Leaflet map */
+        #mapid {
+            height: 600px; /* Set a height for the map */
+            width: 100%;   /* Make the map fill the width */
+        }
+
+        /* Basic styling for the custom tooltip on hover */
+        /* This provides a visual box when hovering over a building */
+        .building-tooltip {
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1000; /* Ensure tooltip is above the map */
+            pointer-events: none; /* Allow mouse events to pass through to the map/buildings */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            display: none; /* Hidden by default */
+            max-width: 300px; /* Limit tooltip width */
+            white-space: normal; /* Allow text to wrap */
+            font-family: sans-serif; /* Standard font */
+            font-size: 14px;
+        }
+
+        .building-tooltip h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #003F87; /* Chapman Blue (example) */
+        }
+
+        .building-tooltip img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            border: 1px solid #eee;
+        }
+
+        .building-tooltip p {
+             margin-bottom: 0;
+        }
+
+        /* Style for the Leaflet Popup (used for click/enhanced view) */
+        /* More robust and persistent than the hover tooltip */
+        .leaflet-popup-content-wrapper {
+             border-radius: 5px;
+        }
+
+        .leaflet-popup-content h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+             color: #003F87; /* Chapman Blue (example) */
+        }
+
+         .leaflet-popup-content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            border: 1px solid #eee;
+        }
+         .leaflet-popup-content p {
+             margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="mapid"></div>
+
+<div id="buildingTooltip" class="building-tooltip"></div>
+
+<script>
+    // Initialize the map
+    // Set the view to a central point of Chapman University campus (approximate coordinates)
+    // The zoom level determines how close the map starts
+    var mymap = L.map('mapid').setView([33.7936, -117.8536], 17);
+
+    // Add a tile layer (the base map layer)
+    // Using OpenStreetMap tiles, a common and free option
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19, // Maximum zoom level
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    }).addTo(mymap); // Add the tile layer to the map
+
+    // --- Placeholder GeoJSON Data ---
+    // IMPORTANT: REPLACE THIS WITH YOUR ACTUAL BUILDING DATA
+    // This structure defines the buildings as polygons and includes properties for the tooltip/popup
+    // You need to manually define the 'coordinates' for each building's boundary
+    // You also need to research and add the correct 'name', 'image_url', and 'courses' for each building
+    var chapmanBuildingsData = {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature", // This is a GeoJSON Feature
+                "properties": {
+                    // *** Add your building properties here ***
+                    "name": "Keck Center for Science and Engineering", // Building Name
+                    "image_url": "https://m.acmartin.com/sites/default/files/styles/portfolio_details_image_973x560px_copy/public/c_2507_0002.jpg?itok=3M3a43Kv", // FIND an actual image URL for Keck
+                    "courses": [
+                        // *** List typical courses or notes for Keck ***
+                        "Engineering courses (all disciplines)",
+                        "Physics courses",
+                        "Computer Science courses",
+                        "Science and Engineering labs",
+                        "Houses the Fowler School of Engineering and Schmid College of Science and Technology."
+                    ],
+                    // Optional: More detailed description for the click popup
+                    "description": "The Keck Center is home to Chapman's Fowler School of Engineering and Schmid College of Science and Technology, featuring advanced labs and classrooms for science and engineering programs."
+                },
+                "geometry": {
+                    "type": "Polygon", // It's a polygon shape
+                    // *** COPY the coordinates array exactly from your geojson.io output ***
+                    "coordinates": [
+                        [
+                            [
+                            -117.85039085749807,
+                            33.79495460167284
+                            ],
+                            [
+                            -117.85039085749807,
+                            33.79337226856765
+                            ],
+                            [
+                            -117.8499840119752,
+                            33.79337226856765
+                            ],
+                            [
+                            -117.8499840119752,
+                            33.79495460167284
+                            ],
+                            [
+                            -117.85039085749807,
+                            33.79495460167284
+                            ]
+                        ]
+                    ]
+                }
+            },  
+             // Add more buildings here following the same structure
+             // { "type": "Feature", "properties": { ... }, "geometry": { ... } }
+             // ...
+        ]
+    };
+
+    // --- Leaflet GeoJSON Layer and Interaction Logic ---
+
+    // Get the custom tooltip element from the HTML
+    var customTooltip = document.getElementById('buildingTooltip');
+
+    // Define the default style for the building polygons
+    var defaultBuildingStyle = {
+        fillColor: '#003F87', // Chapman Blue fill (example)
+        weight: 1,            // Border thickness
+        opacity: 0.8,         // Border opacity
+        color: 'white',       // Border color
+        dashArray: '3',       // Dashed border
+        fillOpacity: 0.3      // Fill opacity
+    };
+
+    // Define the style when a building is hovered over
+    var hoverBuildingStyle = {
+        fillColor: '#FF5733', // Highlight color (example orange)
+        weight: 2,
+        opacity: 1,
+        color: '#FF5733',
+        dashArray: '',        // Solid border
+        fillOpacity: 0.6
+    };
+
+    // Create the GeoJSON layer and add it to the map
+    var buildingsLayer = L.geoJSON(chapmanBuildingsData, {
+        style: defaultBuildingStyle, // Apply the default style
+        onEachFeature: function (feature, layer) {
+            // This function runs for each feature (building polygon) in the GeoJSON data
+
+            // Get the properties for this building
+            var props = feature.properties;
+
+            // --- Hover Logic (Custom Tooltip) ---
+            layer.on({
+                mouseover: function (e) {
+                    // When mouse hovers over the building polygon
+
+                    // Highlight the building polygon
+                    layer.setStyle(hoverBuildingStyle);
+
+                    // Bring the hovered layer to the front so its border is visible
+                    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                        layer.bringToFront();
+                    }
+
+                    // Populate the custom tooltip element with building info
+                    var tooltipContent = '<h4>' + props.name + '</h4>';
+                    if (props.image_url) {
+                         tooltipContent += '<img src="' + props.image_url + '" alt="' + props.name + ' Exterior">';
+                    }
+                    tooltipContent += '<p><strong>Classes/Notes:</strong></p>';
+                    if (props.courses && props.courses.length > 0) {
+                        tooltipContent += '<ul>';
+                        props.courses.forEach(function(course) {
+                            tooltipContent += '<li>' + course + '</li>';
+                        });
+                        tooltipContent += '</ul>';
+                    } else {
+                        tooltipContent += '<p>No specific course info available.</p>';
+                    }
+
+                    customTooltip.innerHTML = tooltipContent;
+
+                    // Position the tooltip near the mouse pointer (adjust offset as needed)
+                    customTooltip.style.left = e.originalEvent.clientX + 10 + 'px';
+                    // Adjust top position to prevent it going off-screen at the top
+                    var topPosition = e.originalEvent.clientY + 10;
+                     if (topPosition + customTooltip.offsetHeight > window.innerHeight) {
+                         topPosition = window.originalEvent.clientY - customTooltip.offsetHeight - 10;
+                     }
+                     customTooltip.style.top = topPosition + 'px';
+
+
+                    // Display the custom tooltip
+                    customTooltip.style.display = 'block';
+                },
+                mouseout: function (e) {
+                    // When mouse leaves the building polygon
+
+                    // Reset the building polygon style to the default
+                    buildingsLayer.resetStyle(layer);
+
+                    // Hide the custom tooltip
+                    customTooltip.style.display = 'none';
+                },
+                 click: function (e) {
+                    // When the building polygon is clicked
+
+                    // Create and open a Leaflet Popup (the "enhanced" view)
+                    // This popup is more persistent and user-friendly for detailed info
+
+                     var popupContent = '<h4>' + props.name + '</h4>';
+                      if (props.image_url) {
+                         popupContent += '<img src="' + props.image_url + '" alt="' + props.name + ' Exterior">';
+                      }
+                      popupContent += '<p><strong>Classes/Notes:</strong></p>';
+                      if (props.courses && props.courses.length > 0) {
+                         popupContent += '<ul>';
+                         props.courses.forEach(function(course) {
+                             popupContent += '<li>' + course + '</li>';
+                         });
+                         popupContent += '</ul>';
+                      } else {
+                         popupContent += '<p>No specific course info available.</p>';
+                     }
+                      // Add the optional description for the enhanced view
+                     if (props.description) {
+                         popupContent += '<p>' + props.description + '</p>';
+                     }
+
+
+                    // Open the popup at the location of the click
+                    L.popup()
+                        .setLatLng(e.latlng) // Open at the click location
+                        .setContent(popupContent) // Set the content
+                        .openOn(mymap); // Open on the map
+
+                    // Hide the hover tooltip if it's visible (click overrides hover)
+                     customTooltip.style.display = 'none';
+                 }
+            });
+        }
+    }).addTo(mymap); // Add the buildings layer to the map
+
+    // Optional: Adjust map view to fit all buildings when loaded
+    // This zooms and pans the map to show all defined building polygons
+    try {
+        mymap.fitBounds(buildingsLayer.getBounds());
+    } catch (e) {
+        console.warn("Could not fit bounds, likely because no building data is present.", e);
+        // If no building data, the fitBounds call will fail.
+        // The initial setView will keep the map centered on campus.
+    }
+
+
+</script>
+
+</body>
+</html>
